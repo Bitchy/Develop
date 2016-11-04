@@ -1,0 +1,16 @@
+{
+	"name": "learnfront",
+	"version": "0.0.0",
+	"description": "learn front tec example",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "grunt"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"grunt": "^0.4.5",
+		"grunt-contrib-sass": "^1.0.1",
+		"grunt-contrib-watch": "^0.6.1"
+	}
+}

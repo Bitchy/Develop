@@ -1,0 +1,7 @@
+$font-face {
+    font-family: "Gotham Black";
+    src:~"url('${tb-path}Gotham-Black.eot')";
+    src: ~"url('${hf-path}Gotham-Black.eot?#iefix') format('embedded-opentype')", ~"url('${tb-path}Gotham-Black.woff') format('woff')", ~"url('${tb-path}Gotham-Black.ttf') format('truetype')", ~"url('${tb-path}Gotham-Black.svg#0b358a21b3e426ee0635cfc34eab6e7e') format('svg')";
+    font-style: normal;
+    font-weight: 400;
+}

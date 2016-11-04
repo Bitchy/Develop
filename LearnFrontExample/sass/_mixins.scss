@@ -1,0 +1,21 @@
+
+@mixin tb-media($media) {
+    @if $media == "mobile" {
+        @media (max-width: $screen-xs-max) {
+            @content;
+        }
+    } @else if $media == "desktop" {
+        // $media (min-width: $screen-md-min) {
+        @media (min-width: $screen-sm-min) {
+            @content;
+        }
+    } @else if $media == "tablet" {
+        @media (min-width: $screen-sm-min) {
+            @content;
+        }
+    } @else if $media == "tablet-only" {
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            @content;
+        }
+    }
+}
