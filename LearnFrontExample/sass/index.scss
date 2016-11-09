@@ -165,3 +165,8 @@
 @include tb-media('mobile') {
   body { background-color: red }
 }
+
+div[id$="t"] {
+    background: red;
+}
+

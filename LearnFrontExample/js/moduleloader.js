@@ -1,3 +1,3 @@
-define(['canvas','index','modalwindow','webstorage'], function() {
+define(['canvas','index','modalwindow','webstorage', 'googlemapapiusing','socialshare'], function() {
 
 })

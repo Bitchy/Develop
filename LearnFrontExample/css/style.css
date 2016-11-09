@@ -130,6 +130,9 @@
 @media (max-width: 767px) {
   body {
     background-color: red; } }
+div[id$="t"] {
+  background: red; }
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -5549,5 +5552,10 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+p:first-line {
+  color: greenyellow; }
+
+p:first-letter {
+  color: green; }
 
 /*# sourceMappingURL=style.css.map */
