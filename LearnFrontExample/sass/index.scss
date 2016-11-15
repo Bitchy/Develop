@@ -157,15 +157,12 @@
         }
     }
 }
-
-.canvas {
-   
-}
-
+.canvas {}
 @include tb-media('mobile') {
-  body { background-color: red }
+    body {
+        background-color: red;
+    }
 }
-
 div[id$="t"] {
     background: red;
 }

@@ -14,8 +14,39 @@ define(['jquery', 'bootstrap'], function($) {
 				top: 125
 			}
 		});
-		var $demo = $('.demo');
-		$demo.append('<h1>This is a test content</h1>');
 	});
+
+	var $window = $(window)
+	var $body = $(document.body)
+
+	var navHeight = $('.navbar').outerHeight(true) + 10
+
+	$body.scrollspy({
+		target: '.tb-sidebar',
+		// offset: navHeight
+	})
+
+	$window.on('load', function() {
+		$body.scrollspy('refresh')
+	})
+
+	$('.tb-docs-container a[href="#"]').click(function(e) {
+		e.preventDefault()
+	})
+
+	// back to top
+	setTimeout(function() {
+		var $sideBar = $('.tb-sidebar')
+
+		$sideBar.affix({
+			offset: {
+				top: 0,
+			}
+		})
+	}, 100)
+
+	setTimeout(function() {
+		$('.tb-top').affix()
+	}, 100)
 
 })

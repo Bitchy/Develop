@@ -1,0 +1,58 @@
+.tb-docs-section {
+    h1[id] {
+        padding-top: 80px;
+        margin-top: -45px;
+    }
+    left: 15px;
+}
+.tb-docs-nav {
+    background-color: yellow;
+    width: 100%;
+    left: initial;
+    right: initial;
+    line-height: 4em;
+}
+.header-right {
+    text-align: right;
+    position: fixed;
+    right: 50px;
+}
+.header-banner-common {
+    display: inline-block;
+    padding: 0 15px;
+}
+.tb-docs-container {
+    .logo {
+        text-align: center;
+    }
+    .tb-sidenav {
+        color: white;
+        font-size: 25px;
+        li {
+            transform: skew(0deg, -10deg);
+            text-align: center;
+            background: #303030;
+            &.active {
+                background-color: white;
+                a {
+                    color: #8328b2;
+                }
+            }
+            a {
+                padding: 30px 0;
+                color: white;
+                &:hover,
+                &:focus {
+                    color: #8328b2;
+                }
+            }
+        }
+    }
+    .tb-sidebar {
+        background-color: black;
+    }
+    .left-nav {
+        margin: 0 -15px;
+        height: 100%;
+    }
+}
