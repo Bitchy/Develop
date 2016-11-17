@@ -1,21 +1,28 @@
+@include tb-media('desktop') {
+    .tb-docs-sections {
+        position: absolute;
+        left: 143px;
+        top: 0;
+    }
+}
 .tb-docs-section {
     h1[id] {
         padding-top: 80px;
         margin-top: -45px;
     }
-    left: 15px;
 }
 .tb-docs-nav {
-    background-color: yellow;
+    background-color: #8328b2;
     width: 100%;
-    left: initial;
-    right: initial;
+    left: 143px;
     line-height: 4em;
-}
-.header-right {
-    text-align: right;
-    position: fixed;
-    right: 50px;
+    a {
+        color: #3ad3aa;
+    }
+    i {
+        color: white;
+        font-size: 18px;
+    }
 }
 .header-banner-common {
     display: inline-block;
@@ -50,9 +57,14 @@
     }
     .tb-sidebar {
         background-color: black;
+        height: 100%;
+        &.affix-top {
+            position: fixed;
+        }
     }
     .left-nav {
         margin: 0 -15px;
         height: 100%;
     }
 }
+.tb-footer {}

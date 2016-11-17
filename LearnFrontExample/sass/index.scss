@@ -166,4 +166,74 @@
 div[id$="t"] {
     background: red;
 }
+.item .thumb {
+    margin-bottom: 20px;
+    height: 140px;
+}
+.item .thumb img {
+    max-width: 140px;
+    max-height: 140px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.item {
+    margin: 0 15px;
+    padding: 15px 0;
+    text-align: center;
+}
+.container-fluid {
+    max-width: 1170px;
+}
+h2 {
+    line-height: 28px;
+    font-family: 'Gotham Medium', 'Open Sans', Helvetica, Arial, sans-serif !important;
+    letter-spacing: -1px !important;
+}
+@include tb-media('desktop') {
+    h2.centered:before {
+        right: 15px;
+        margin-left: -50%;
+    }
+    h2.centered:before,
+    h2.centered:after {
+        background-color: #d8d8d8;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+    h2.centered:after {
+        left: 15px;
+        margin-right: -50%;
+    }
+    h2.centered:before,
+    h2.centered:after {
+        background-color: #d8d8d8;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+    h2.centered {
+        overflow: hidden;
+    }
+}
 
+.carousel-component:first-child {
+    margin-top: 0;
+}
+.carousel-component:first-child {
+    margin: 50px 0 22px;
+}
+.carousel-component {
+    padding: 0;
+}
+.carousel-component {
+    padding: 0 10px;
+    margin: 45px 0 25px;
+}

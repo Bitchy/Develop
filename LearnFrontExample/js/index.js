@@ -40,7 +40,9 @@ define(['jquery', 'bootstrap'], function($) {
 
 		$sideBar.affix({
 			offset: {
-				top: 0,
+				top: function() {
+					return $('.tb-docs-nav').height();
+				},
 			}
 		})
 	}, 100)

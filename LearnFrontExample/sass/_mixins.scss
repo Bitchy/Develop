@@ -1,4 +1,3 @@
-
 @mixin tb-media($media) {
     @if $media == "mobile" {
         @media (max-width: $screen-xs-max) {
