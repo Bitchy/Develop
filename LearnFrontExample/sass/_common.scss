@@ -1,9 +1,9 @@
-$font-face {
-    font-family: "Gotham Black";
-    src: ~"url('${tb-path}Gotham-Black.eot')";
-    src: ~"url('${hf-path}Gotham-Black.eot?#iefix') format('embedded-opentype')", ~"url('${tb-path}Gotham-Black.woff') format('woff')", ~"url('${tb-path}Gotham-Black.ttf') format('truetype')", ~"url('${tb-path}Gotham-Black.svg#0b358a21b3e426ee0635cfc34eab6e7e') format('svg')";
-    font-style: normal;
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+@font-face {
+    font-family: 'Franchise Bold';
+    src: url("../fonts/Franchise-Bold-hinted.eot?") format("eot"),url("../fonts/Franchise-Bold-hinted.woff") format("woff"),url("../fonts/Franchise-Bold-hinted.ttf") format("truetype"),url("../fonts/Franchise-Bold-hinted.svg#Franchise-Bold") format("svg");
     font-weight: 400;
+    font-style: normal;
 }
 .row-sm-height {
     display: table;
@@ -26,4 +26,25 @@ $font-face {
 }
 .col-sm-bottom {
     vertical-align: bottom;
+}
+
+.btn-pink-text {
+    color: $tb-pink;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+.page-header {
+    border: none;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background: $tb-black;
+    position: fixed;
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }

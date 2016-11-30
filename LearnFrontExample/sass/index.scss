@@ -237,3 +237,18 @@ h2 {
     padding: 0 10px;
     margin: 45px 0 25px;
 }
+
+.mark-container {
+    width: auto;
+    height: auto;
+}
+.watermark {
+    background:transparent url(//uat-images.hubbell.com/ohwassets/Hubbell/Discontinued.png) no-repeat;
+    background-position: center;
+    
+
+}
+img.logo {
+    filter:alpha(opacity=75);
+    opacity:.75;
+}

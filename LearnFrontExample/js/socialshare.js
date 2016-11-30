@@ -3,7 +3,7 @@ define(['jquery', 'jssocials'], function($) {
 		showLabel: false,
 		showCount: false,
 		shareIn: "popup",
-		shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon", "whatsapp"]
+		shares: ["email", "twitter", "facebook", "googleplus"]
 	});
 
 	$(document).

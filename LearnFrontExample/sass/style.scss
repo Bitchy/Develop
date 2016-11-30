@@ -1,8 +1,11 @@
 @import "variables";
 
+@import "_common";
 @import "_mixins";
+@import "_tb-header";
+@import "_tb-footer";
 @import "index";
-@import "../common/assets/stylesheets/_bootstrap.scss";
+@import "../common/assets/stylesheets/_bootstrap";
 @import "css3-selector";
 @import "loading";
 @import "tabcobell-homepage"

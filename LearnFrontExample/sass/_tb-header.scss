@@ -1,0 +1,105 @@
+.tb-docs-nav {
+    z-index: 90;
+    .header {
+        position: relative;
+        div {
+            display: inline-block;
+        }
+        background-color: $tb-purple;
+        left: 124px;
+        line-height: 5em;
+        a {
+            color: $tb-light-blue;
+            text-decoration: none;
+        }
+        i {
+            color: $tb-white;
+            font-size: 18px;
+        }
+        .-left {
+            width: 50%;
+        }
+        .-right {
+            position: absolute;
+            right: 160px;
+            top: 0;
+        }
+        .-middle {
+            position: absolute;
+            left: 25%;
+        }
+        .header-banner-common {
+            padding: 0 15px;
+        }
+        @include tb-media('tablet') {
+            .-middle {
+                display: none !important;
+                visibility: hidden !important;
+            }
+        }
+        .-left {
+            width: 50%;
+            input {
+                display: inline-block;
+                position: absolute;
+                left: 35px;
+                top: 15px;
+                width: 0;
+                transition: width 300ms ease-in;
+                font-size: 16px;
+                height: 40px;
+                text-transform: uppercase;
+                &.actived {
+                    width: 30%;
+                    padding: 0 8px;
+                }
+            }
+        }
+        .header-search-box {
+            display: inline-block;
+            border: 0;
+            padding: 0;
+            background: $tb-dark-purple;
+            color: white;
+        }
+        .header-title {
+            @include tb-transition(opacity, 300ms, ease-in-out);
+        }
+        .fa-in {
+            opacity: 1;
+        }
+        .fade-out {
+            opacity: 0;
+        }
+    }
+    .mobile-header {
+        background: $tb-black;
+        .-right,
+        .-left {
+            font-size: 30px;
+            color: $tb-white;
+            text-transform: uppercase;
+            line-height: 92px;
+            text-align: center;
+        }
+        .-search {
+            text-align: right;
+        }
+        .-middle {
+            text-align: center;
+        }
+        .-left {
+            text-align: left;
+            background: url("//d29vij1s2h2tll.cloudfront.net/~/media/images/taco-bell/ui/header-menu.svg") 24px 24px no-repeat;
+            width: 100px;
+            height: 100px;
+        }
+        .logo {
+            background: url("//d29vij1s2h2tll.cloudfront.net/~/media/images/taco-bell/ui/m/top-nav-tb-logo.svg") center no-repeat;
+            display: inline-block;
+            height: 92px;
+            width: 61px;
+            text-indent: -9999px;
+        }
+    }
+}
